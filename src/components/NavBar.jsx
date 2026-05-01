@@ -3,7 +3,7 @@ const NavBar = () => {
     const categoryList = ["All", "Arts & Crafts", "Automotive", "Baby", "Books", "Computers", "Electronics", "Garden & Outdoor", "Grocery", "Health & Personal Care", "Home & Kitchen", "Industrial & Scientific", "Luggage", "Movies & TV", "Music, CDs & Vinyl", "Pet Supplies", "Software", "Sports & Outdoors", "Tools & Home Improvement", "Toys & Games", "Video Games"];
 
     return (
-    <>
+    <nav className="nav">
         <img src="" alt="logo" />
         
         <section className="nav-group">
@@ -51,7 +51,7 @@ const NavBar = () => {
             <p>Returns</p>
             <h5>& Orders</h5>
         </section>
-    </>
+    </nav>
 
   )
 
