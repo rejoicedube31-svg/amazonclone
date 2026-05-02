@@ -1,13 +1,17 @@
+import { Link } from 'react-router-dom';
+
 const NavBar = () => {
   
     const categoryList = ["All", "Arts & Crafts", "Automotive", "Baby", "Books", "Computers", "Electronics", "Garden & Outdoor", "Grocery", "Health & Personal Care", "Home & Kitchen", "Industrial & Scientific", "Luggage", "Movies & TV", "Music, CDs & Vinyl", "Pet Supplies", "Software", "Sports & Outdoors", "Tools & Home Improvement", "Toys & Games", "Video Games"];
 
     return (
     <nav className="nav">
-        <img src="" alt="logo" />
-        
+        <Link to="/">
+            <img src="test" alt="logo" />
+        </Link>
+
         <section className="nav-group">
-            <img src="" alt="location" />
+            <img src="null" alt="location" />
             <p>Deliver to</p>
             <h5>South Africa</h5>
         </section>
@@ -16,15 +20,15 @@ const NavBar = () => {
             <select>
                 {
                     categoryList.map((category) => (
-                    <option >{category}</option>
-                    ))
+                    <option key={category}>{category}</option>
+                 ))
                 }
             </select>
 
             <input type="text" placeholder="Search Amazon" />
 
             <button>
-                <img src="" alt="search" />
+                <img src="test" alt="search" />
             </button>
 
         </section>
