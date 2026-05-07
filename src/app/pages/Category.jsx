@@ -1,6 +1,7 @@
 import NavBar from "../../components/NavBar";
 import Footer from "../../components/Footer";
 import Item from "../../components/Item";
+import ItemGroup from "../../components/ItemGroup";
 
 const Category = () => {
   
@@ -13,7 +14,7 @@ const Category = () => {
             <aside>
               <section>
                 <h1>Category</h1>
-                <Item />
+                <Item title="Item 3" price={1000} sales={100} rating={4.5}  />
               </section>
             </aside>
             

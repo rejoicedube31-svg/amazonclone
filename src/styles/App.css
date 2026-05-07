@@ -1,4 +1,4 @@
-.counter {
+/* .counter {
   font-size: 16px;
   padding: 5px 10px;
   border-radius: 5px;
@@ -181,4 +181,32 @@
     right: 0;
     border-right-color: var(--border);
   }
+} */
+
+nav {
+  background: #131921;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  align-items: center;
+}
+
+.nav-group > * {
+  margin: 0;
+}
+
+footer section {
+  background: #232f3e;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  align-items:center;
+}
+
+section#top {
+  background: white;
+  color: black;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
 }

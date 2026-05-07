@@ -1,7 +1,7 @@
 const Footer = () => {
     return (
         <footer>
-            <section>
+            <section id="top">
                 <h3>See personal recommendations</h3>
                 <button>Sign in</button>
                 <p>New customer? <a href="https://www.amazon.com/ap/register?openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fref%3Drhf_sign_in&openid.assoc_handle=usflex">Start here.</a></p>
@@ -9,7 +9,7 @@ const Footer = () => {
 
             <a>Back to Top</a>
 
-            <section>
+            <section id="ezansi">
                 <ul>
                     <li><h5><strong>Get to Know Us</strong></h5></li>
                     <li><h5>Careers</h5></li>

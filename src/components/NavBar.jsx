@@ -19,9 +19,11 @@ const NavBar = () => {
         <section className="search">
             <select>
                 {
-                    categoryList.map((category) => (
-                    <option key={category}>{category}</option>
-                 ))
+                    categoryList.map((category, index) => (
+                        <option key={index} value={category}>
+                            {category}
+                        </option>
+                    ))
                 }
             </select>
 
@@ -34,16 +36,17 @@ const NavBar = () => {
         </section>
         
         <section className="nav-group">
-            <option value="en_US">English - EN</option>
-            <option value="es_US">español - ES</option>
-            <option value="ar_AE">العربية - AR</option>
-            <option value="de_DE">Deutsch - DE</option>
-            <option value="he_IL">עברית - HE</option>
-            <option value="ko_KR">한국어 - KO</option>
-            <option value="pt_BR">português - PT</option>
-            <option value="zh_CN">中文 (简体) - ZH</option>
-            <option value="zh_TW">中文 (繁體) - ZH</option>
-            
+            <select>
+                <option value="en_US">English - EN</option>
+                <option value="es_US">español - ES</option>
+                <option value="ar_AE">العربية - AR</option>
+                <option value="de_DE">Deutsch - DE</option>
+                <option value="he_IL">עברית - HE</option>
+                <option value="ko_KR">한국어 - KO</option>
+                <option value="pt_BR">português - PT</option>
+                <option value="zh_CN">中文 (简体) - ZH</option>
+                <option value="zh_TW">中文 (繁體) - ZH</option>
+            </select>
         </section>
         
         <section className="nav-group">
@@ -55,6 +58,17 @@ const NavBar = () => {
             <p>Returns</p>
             <h5>& Orders</h5>
         </section>
+        
+        <section className="nav-group">
+            
+            <Link to ="/Checkout">
+                {/* <img src="" alt=""/> */}
+                <p>Cart</p>
+            </Link>
+ 
+        </section>
+        
+
     </nav>
 
   )
