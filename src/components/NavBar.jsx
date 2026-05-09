@@ -1,4 +1,10 @@
 import { Link } from 'react-router-dom';
+import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
+import SearchIcon from '@mui/icons-material/Search';
+import usflag from '../assets/landing/usflag.png';
+import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+import { exp } from 'firebase/firestore/pipelines';
+
 
 const NavBar = () => {
   
@@ -7,17 +13,21 @@ const NavBar = () => {
     return (
     <nav className="nav">
         <Link to="/">
-            <img src="test" alt="logo" />
+            <img id="logo" src="https://pngimg.com/uploads/amazon/amazon_PNG11.png" alt="logo" />
         </Link>
 
         <section className="nav-group">
-            <img src="null" alt="location" />
-            <p>Deliver to</p>
-            <h5>South Africa</h5>
+            <LocationOnOutlinedIcon />
+
+            <div id="deliver">
+                <p>Deliver to</p>
+                <h4>South Africa</h4>
+            </div>
+            
         </section>
 
         <section className="search">
-            <select>
+            <select id="category-select">
                 {
                     categoryList.map((category, index) => (
                         <option key={index} value={category}>
@@ -27,17 +37,27 @@ const NavBar = () => {
                 }
             </select>
 
-            <input type="text" placeholder="Search Amazon" />
+            <input  id="search-input" type="text" placeholder="Search Amazon" />
 
             <button>
-                <img src="test" alt="search" />
+                <SearchIcon />
             </button>
 
         </section>
         
-        <section className="nav-group">
+        <section className="language">
+            <img
+                    className="flag-icon"
+                    src={usflag}
+                    alt="US flag"
+                    />
+
             <select>
-                <option value="en_US">English - EN</option>
+                
+                <option 
+                    
+                    value="en_US">EN
+                </option>
                 <option value="es_US">español - ES</option>
                 <option value="ar_AE">العربية - AR</option>
                 <option value="de_DE">Deutsch - DE</option>
@@ -49,29 +69,35 @@ const NavBar = () => {
             </select>
         </section>
         
-        <section className="nav-group">
+        <section className="nav-group account">
             <p>Hello, Sign in</p>
-            <h5>Account & Lists</h5>
+            <h4>Account & Lists</h4>
+            <option></option>
         </section>
 
-        <section className="nav-group">
+        <section className="nav-group orders">
             <p>Returns</p>
-            <h5>& Orders</h5>
+            <h4>& Orders</h4>
         </section>
         
-        <section className="nav-group">
-            
-            <Link to ="/Checkout">
-                {/* <img src="" alt=""/> */}
-                <p>Cart</p>
-            </Link>
- 
-        </section>
-        
+        <section className="nav-group cart-section">
+            <Link to="/checkout" className="cart-link">
+    
+                <div className="cart-icon-wrapper">
+                <span className="cart-count">0</span>
 
+                <ShoppingCartOutlinedIcon className="cart-icon" />
+                </div>
+
+                <h5>Cart</h5>
+
+            </Link>
+        </section>
+        
     </nav>
 
   )
+  
 
 }
 

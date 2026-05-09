@@ -2,7 +2,7 @@ import { exp } from "firebase/firestore/pipelines"
 
 const ItemBarGroup = ({ title, images }) => {
     return (
-        <>
+        <section className="item-bar-group-title">
             <h3>{title}</h3>
             <div className="item-bar-group">
                 {
@@ -13,8 +13,7 @@ const ItemBarGroup = ({ title, images }) => {
                     ))
                 }
             </div>      
-        
-        </>
+        </section>
     )
 }
 

@@ -2,23 +2,29 @@ import { Link } from "react-router-dom";
 
 const ItemGroup = ({ title, images, link }) => {
   return (
-    <>
+
+    <section className="item-section">
+
       <h3>{title}</h3>
 
       <div className="item-group">
+
         {images.map((image, index) => (
-          <Link to="/Category" key={index} className="item">
-            {image ? (
-              <img src={image} alt={title} />
-            ) : null}
+
+          <Link to="/category" key={index} className="item">
+
+            <img src={image} alt={title} />
 
             <p>{link}</p>
+
           </Link>
+
         ))}
+
       </div>
 
-      <Link to="/Category">See more</Link>
-    </>
+    </section>
+
   );
 };
 
