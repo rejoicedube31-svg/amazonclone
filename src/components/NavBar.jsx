@@ -25,7 +25,7 @@ const NavBar = () => {
 
             <div id="deliver">
                 <p>Deliver to</p>
-                <h4>South Africa</h4>
+                <h5>South Africa</h5>
             </div>
             
         </section>
@@ -75,13 +75,13 @@ const NavBar = () => {
         
         <section className="nav-group account">
             <p>Hello, Sign in</p>
-            <h4>Account & Lists</h4>
+            <h5>Account & Lists</h5>
             <option></option>
         </section>
 
         <section className="nav-group orders">
             <p>Returns</p>
-            <h4>& Orders</h4>
+            <h5>& Orders</h5>
         </section>
         
         <section className="nav-group cart-section">
