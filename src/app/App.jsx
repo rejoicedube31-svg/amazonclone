@@ -1,9 +1,9 @@
 import { Route, Routes } from 'react-router-dom'
-import '../styles/app.css'
+import '../styles/App.css'
 import Home from './pages/Home.jsx'
 import Category from './pages/Category.jsx'
 import Checkout from './pages/Cart.jsx'
-import { CartProvider} from './providers.jsx'
+import { CartProvider} from './Providers.jsx'
 import Cart from './pages/Cart.jsx'
 
 function App() {
