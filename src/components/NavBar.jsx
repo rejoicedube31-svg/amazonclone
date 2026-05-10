@@ -3,12 +3,16 @@ import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import SearchIcon from '@mui/icons-material/Search';
 import usflag from '../assets/landing/usflag.png';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
-import { exp } from 'firebase/firestore/pipelines';
+import { useContext } from "react";
+import { CartContext } from "../features/cart/cartContext.jsx";
 
 
 const NavBar = () => {
   
     const categoryList = ["All", "Arts & Crafts", "Automotive", "Baby", "Books", "Computers", "Electronics", "Garden & Outdoor", "Grocery", "Health & Personal Care", "Home & Kitchen", "Industrial & Scientific", "Luggage", "Movies & TV", "Music, CDs & Vinyl", "Pet Supplies", "Software", "Sports & Outdoors", "Tools & Home Improvement", "Toys & Games", "Video Games"];
+
+    const { cartCount } = useContext(CartContext);
+    console.log("cartCount:", cartCount);
 
     return (
     <nav className="nav">
@@ -81,10 +85,10 @@ const NavBar = () => {
         </section>
         
         <section className="nav-group cart-section">
-            <Link to="/checkout" className="cart-link">
+            <Link to="/Cart" className="cart-link">
     
                 <div className="cart-icon-wrapper">
-                <span className="cart-count">0</span>
+                <span className="cart-count">{JSON.stringify(cartCount)|| 0}</span>
 
                 <ShoppingCartOutlinedIcon className="cart-icon" />
                 </div>

@@ -17,8 +17,6 @@ const SingleItem = ({ title, image, link }) => {
 
       </Link>
 
-      <Link to="/category">See more</Link>
-
     </section>
   );
 };

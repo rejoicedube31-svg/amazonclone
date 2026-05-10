@@ -2,12 +2,16 @@ const Footer = () => {
     return (
         <footer>
             <section id="top">
-                <h3>See personal recommendations</h3>
-                <button>Sign in</button>
+                <h4>See personal recommendations</h4>
+                <button id="signin-btn">Sign in</button>
                 <p>New customer? <a href="https://www.amazon.com/ap/register?openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fref%3Drhf_sign_in&openid.assoc_handle=usflex">Start here.</a></p>
             </section>
-
-            <a>Back to Top</a>
+            <section className="back-to-top">
+                <a href="#top">
+                    Back to top
+                </a>
+            </section>
+                
 
             <section id="ezansi">
                 <ul>
@@ -38,6 +42,17 @@ const Footer = () => {
                     <li><h5>Shop with Points</h5></li>
                     <li><h5>Reload Your Balance</h5></li>
                     <li><h5>Amazon Currency Converter</h5></li>
+                </ul>
+
+                <ul className="footer-list">
+                    <li><h5><strong>Let Us Help You</strong></h5></li>
+                    <li><h5>Amazon and COVID-19</h5></li>
+                    <li><h5>Your Account</h5></li>
+                    <li><h5>Your Orders</h5></li>
+                    <li><h5>Shipping Rates & Policies</h5></li>
+                    <li><h5>Returns & Replacements</h5></li>
+                    <li><h5>Manage Your Content and Devices</h5></li>
+                    <li><h5>Help</h5></li>
                 </ul>
 
             </section>

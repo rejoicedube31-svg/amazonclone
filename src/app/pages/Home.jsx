@@ -1,6 +1,15 @@
 import NavBar from "../../components/NavBar";
 import Footer from "../../components/Footer";
+import SubFooter from "../../components/SubFooter"
 import img01 from '../../assets/landing/img01.jpg'
+import img02 from '../../assets/landing/img02.jpg'
+import img03 from '../../assets/landing/img03.jpg'
+import img04 from '../../assets/landing/img04.jpg'
+import img05 from '../../assets/landing/img05.jpg'
+import img06 from '../../assets/landing/img06.jpg'
+import img07 from '../../assets/landing/img07.jpg'
+import img08 from '../../assets/landing/img08.jpg'
+import img09 from '../../assets/landing/img09.jpg'
 import img1 from '../../assets/landing/img1.jpg'
 import img2 from '../../assets/landing/img2.jpg'
 import img3 from '../../assets/landing/img3.jpg'
@@ -21,6 +30,8 @@ import banner from '../../assets/landing/banner.jpg';
 const Home = () => {
   return (
     <>
+        <div id="top"></div>
+
         <NavBar />
 
         <SubNav />
@@ -41,27 +52,74 @@ const Home = () => {
                 
               <div className="itemGroup-card">
                 <ItemGroup
-                  title="New home arrivals"
-                  images={[img1, img2, img3, img4]}
-                  link="Shop now"
+                  title="Shop Fashion for less"
+                  images={[img02,img03,img04,img02]}
+                  subtitle="Under $50"
+                  link="See all deals"
                 />
 
               </div>
 
               <div className="itemGroup-card">
                 <ItemGroup
-                  title="New home arrivals"
-                  images={[img1, img2, img3, img4]}
-                  link="Shop now"
+                  title="New home arrivals under $50"
+                  images={[img1, img2, img3, img05]}
+                  subtitle="Kitchen & Dining"
+                  link="Shop the latest from Home"
                 />
 
               </div>
 
               <div className="itemGroup-card">
                 <ItemGroup
-                  title="New home arrivals"
-                  images={[img1, img2, img3, img4]}
-                  link="Shop now"
+                  title="Find gifts for Mom"
+                  images={[img06, img07, img08, img09]}
+                  subtitle="Gift Item"
+                  link="Shop Mother's Day Gifts"
+                />
+
+              </div>
+
+          </div>
+
+          <div className="product-row">
+
+              <div className="itemGroup-card">
+                <ItemGroup
+                  title="Shop Fashion for less"
+                  images={[img02,img03,img04,img02]}
+                  subtitle="Under $50"
+                  link="See all deals"
+                />
+
+              </div>
+                
+              <div className="itemGroup-card">
+                <ItemGroup
+                  title="Shop Fashion for less"
+                  images={[img02,img03,img04,img02]}
+                  subtitle="Under $50"
+                  link="See all deals"
+                />
+
+              </div>
+
+              <div className="itemGroup-card">
+                <ItemGroup
+                  title="New home arrivals under $50"
+                  images={[img1, img2, img3, img05]}
+                  subtitle="Kitchen & Dining"
+                  link="Shop the latest from Home"
+                />
+
+              </div>
+
+              <div className="itemGroup-card">
+                <ItemGroup
+                  title="Find gifts for Mom"
+                  images={[img06, img07, img08, img09]}
+                  subtitle="Gift Item"
+                  link="Shop Mother's Day Gifts"
                 />
 
               </div>
@@ -73,15 +131,126 @@ const Home = () => {
             images={[img17, img18, img19, img20, img21, img22, img23]}
           />
 
+          <ItemBarGroup
+            title="Best Sellers in Clothing, Shoes & Jewelry"
+            images={[img17, img18, img19, img20, img21, img22, img23]}
+          />
+
           <div className="product-row">
 
-            {/* future ItemGroups */}
+              <div className="itemGroup-card">
+                <ItemGroup
+                  title="Shop Fashion for less"
+                  images={[img02,img03,img04,img02]}
+                  subtitle="Under $50"
+                  link="See all deals"
+                />
+
+              </div>
+                
+              <div className="itemGroup-card">
+                <ItemGroup
+                  title="Shop Fashion for less"
+                  images={[img02,img03,img04,img02]}
+                  subtitle="Under $50"
+                  link="See all deals"
+                />
+
+              </div>
+
+              <div className="itemGroup-card">
+                <ItemGroup
+                  title="New home arrivals under $50"
+                  images={[img1, img2, img3, img05]}
+                  subtitle="Kitchen & Dining"
+                  link="Shop the latest from Home"
+                />
+
+              </div>
+
+              <div className="itemGroup-card">
+                <ItemGroup
+                  title="Find gifts for Mom"
+                  images={[img06, img07, img08, img09]}
+                  subtitle="Gift Item"
+                  link="Shop Mother's Day Gifts"
+                />
+
+              </div>
 
           </div>
+
+          <ItemBarGroup
+            title="Best Sellers in Clothing, Shoes & Jewelry"
+            images={[img17, img18, img19, img20, img21, img22, img23]}
+          />
+
+          <ItemBarGroup
+            title="Best Sellers in Clothing, Shoes & Jewelry"
+            images={[img17, img18, img19, img20, img21, img22, img23]}
+          />
+
+          <div className="product-row">
+
+              <div className="itemGroup-card">
+                <ItemGroup
+                  title="Shop Fashion for less"
+                  images={[img02,img03,img04,img02]}
+                  subtitle="Under $50"
+                  link="See all deals"
+                />
+
+              </div>
+                
+              <div className="itemGroup-card">
+                <ItemGroup
+                  title="Shop Fashion for less"
+                  images={[img02,img03,img04,img02]}
+                  subtitle="Under $50"
+                  link="See all deals"
+                />
+
+              </div>
+
+              <div className="itemGroup-card">
+                <ItemGroup
+                  title="New home arrivals under $50"
+                  images={[img1, img2, img3, img05]}
+                  subtitle="Kitchen & Dining"
+                  link="Shop the latest from Home"
+                />
+
+              </div>
+
+              <div className="itemGroup-card">
+                <ItemGroup
+                  title="Find gifts for Mom"
+                  images={[img06, img07, img08, img09]}
+                  subtitle="Gift Item"
+                  link="Shop Mother's Day Gifts"
+                />
+
+              </div>
+
+          </div>
+
+          <ItemBarGroup
+            title="Best Sellers in Clothing, Shoes & Jewelry"
+            images={[img17, img18, img19, img20, img21, img22, img23]}
+          />
+
+          <ItemBarGroup
+            title="Best Sellers in Clothing, Shoes & Jewelry"
+            images={[img17, img18, img19, img20, img21, img22, img23]}
+          />
+
+        
 
 
         
         <Footer/>
+        <SubFooter />
+
     </>
     )
 }
