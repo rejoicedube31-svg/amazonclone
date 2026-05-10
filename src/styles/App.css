@@ -574,3 +574,28 @@ section#top {
     grid-template-columns: repeat(2, minmax(140px, 1fr));
   }
 }
+
+/* cart buttons */
+
+.clear-cart-btn {
+  background: #f0c14b;
+  border: 1px solid #a88734;
+  padding: 10px 15px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.clear-cart-btn:hover {
+  background: #ddb347;
+}
+
+.empty-cart-msg {
+  font-size: 18px;
+  color: #555;
+  margin-top: 20px;
+}
+
+#aside {
+  padding-left: 20px;
+}

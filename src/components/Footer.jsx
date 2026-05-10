@@ -3,8 +3,9 @@ const Footer = () => {
         <footer>
             <section id="top">
                 <h4>See personal recommendations</h4>
-                <button id="signin-btn">Sign in</button>
-                <p>New customer? <a href="https://www.amazon.com/ap/register?openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fref%3Drhf_sign_in&openid.assoc_handle=usflex">Start here.</a></p>
+                <a href="https://www.amazon.com/ap/signin?openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fref%3Drhf_sign_in&openid.assoc_handle=usflex&openid.pape.max_auth_age=0"target="_blank"
+                    rel="noopener noreferrer"> <button id="signin-btn">Sign in</button></a>
+                <p>New customer? <a href="https://www.amazon.com/ap/register?openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fref%3Drhf_sign_in&openid.assoc_handle=usflex"target="_blank">Start here.</a></p>
             </section>
             <section className="back-to-top">
                 <a href="#top">
@@ -53,7 +54,7 @@ const Footer = () => {
                     <li><h5>Returns & Replacements</h5></li>
                     <li><h5>Manage Your Content and Devices</h5></li>
                     <li><h5>Help</h5></li>
-                </ul>
+            </ul>
 
             </section>
         </footer>
